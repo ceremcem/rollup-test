@@ -1,10 +1,5 @@
 require! 'on-idle'
-require! 'prelude-ls': {map}
+require! 'prelude-ls': {last}
 x = (a) ->
-    <- on-idle
-    console.log if a
-        \hello
-    else
-        map (.x), [12345]
-
+    console.log \hello!, last <[ 1 2 3 ]>
 x!
