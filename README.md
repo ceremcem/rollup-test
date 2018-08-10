@@ -4,7 +4,19 @@ This is the test project to see if we can replace browserify with rollup seamles
 
 # Test
 
+### Install 
+
+```console 
+git clone https://github.com/ceremcem/rollup-test
+cd rollup-test 
+npm i
+```
+
 ### Do
+
+* Clean the output 
+
+      rm dist/*
 
 * Build a bundle with Browserify: 
 
@@ -21,10 +33,18 @@ This is the test project to see if we can replace browserify with rollup seamles
 1. ...browserify bundle to work (*SUCCESS*): 
 
        node ./dist/browserify-bundle.js
+       hello! 3
       
-2. ...rollup bundle to work (*FAIL*): 
+2. ...rollup bundle to work (*SUCCESS*): 
 
        node ./dist/rollup-bundle.js
+       hello! 3
 
-3. ...rollup bundle containing **only** the necessary codes.
+3. ...rollup bundle containing **only** the necessary codes (*FAIL*)
+
+      ```console
+      $ ls -lh
+      -rw-r--r-- 1 ceremcem ceremcem 31K Aug 10 21:23 browserify-bundle.js
+      -rw-r--r-- 1 ceremcem ceremcem 30K Aug 10 21:23 rollup-bundle.js
+      ```
 
