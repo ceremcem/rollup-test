@@ -40,7 +40,7 @@ npm i
        node ./dist/rollup-bundle.js
        hello! 3
 
-3. ...rollup bundle containing **only** the necessary codes (*FAIL*)
+3. ...rollup bundle containing **only** the necessary codes ([*FAIL*](https://github.com/ceremcem/rollup-test/issues/2))
 
       ```console
       $ ls -lh
