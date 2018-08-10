@@ -14,7 +14,7 @@ This is the test project to see if we can replace browserify with rollup seamles
 * Build a bundle with Rollup: 
 
       ./build-browserify.sh
-      # output => dist/browserify-bundle.js
+      # output => dist/rollup-bundle.js
       
 ### Expect 
 
@@ -24,7 +24,7 @@ This is the test project to see if we can replace browserify with rollup seamles
       
 2. ...rollup bundle to work (*FAIL*): 
 
-       node ./dist/browserify-bundle.js
+       node ./dist/rollup-bundle.js
 
 3. ...rollup bundle containing **only** the necessary codes.
 
