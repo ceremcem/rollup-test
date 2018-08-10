@@ -25,7 +25,7 @@ npm i
       
 * Build a bundle with Rollup: 
 
-      ./build-browserify.sh
+      ./build-rollup.sh
       # output => dist/rollup-bundle.js
       
 ### Expect 
